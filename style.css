@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+.top-half{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 400px;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+
+.error-message{
+    margin-bottom: 5px;
+    width: 40%;
+    align-self: center;
+    border: 1px solid salmon;
+    border-radius: 4px;
+    background-color: salmon;
+}
+
+h1{
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.field-add{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.text-field{
+    min-width: 200px;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.add-button{
+    padding: 4px 8px 4px 8px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.to-do-list-container{
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    margin-bottom: 10px;
+    max-width: 600px;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+    overflow: scroll;
+    min-height: 185px;
+}
+
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    min-width: 500px;
+}
+
+.todo-hr{
+    width: 120px;
+    border: 1px solid black;
+    align-self: flex-start;
+    background-color: rosybrown;
+    justify-self: flex-start;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.completed-hr{
+    width: 200px;
+    border: 1px solid black;
+    align-self: flex-start;
+    background-color: rosybrown;
+    justify-self: flex-start;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.to-do-label{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+}
+
+.task-container{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.task{
+    color: black;
+    width: 70%;
+    text-align: start;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-left: 10%;
+    font-family: 'Cinzel', serif;
+}
+
+
+.edit-text-field{
+    justify-self: flex-start;
+    width: 50%;
+    text-align: start;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.delete-button, .edit-button, .complete-button{
+    justify-self: right;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+.mid-color{
+    background-color: white;
+    min-height: 300px;
+    width: 100%;
+    position: absolute;
+}
+
+.completed-tasks{
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+    overflow: scroll;
+    min-height: 185px;
+    max-height: 185px;
+    margin-left: -40px;
+}
+
+.style-completed-task{
+    text-align: left;
+    margin-left: -110px;
+}
+
+footer{
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    color: rgba(0,0,0,.6);
+}
+
+button:hover{
+    background-color: rgba(255, 194, 250, 0.65);
+}
